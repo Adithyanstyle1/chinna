@@ -1,0 +1,8 @@
+.contact-grid{ display:grid; grid-template-columns: 1fr 320px; gap:20px; margin-top:18px; align-items:start; }
+.contact-form label{ display:block; margin-bottom:12px; font-weight:600; color:var(--text); }
+.contact-form input, .contact-form textarea, .contact-form select{ margin-top:6px; }
+.sent{ margin-left:12px; color:green; font-weight:700; }
+
+.contact-info .card{ background:var(--card); padding:12px; border-radius:10px; margin-bottom:12px; box-shadow:0 8px 20px rgba(12,14,20,0.04); }
+
+@media(max-width:900px){ .contact-grid{ grid-template-columns:1fr; } }
