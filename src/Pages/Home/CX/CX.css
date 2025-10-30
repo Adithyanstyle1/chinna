@@ -1,0 +1,98 @@
+/* CX.css — Black & Gold premium */
+.cx-section {
+  background: #050505;
+  color: #fff;
+  padding: 64px 6%;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.cx-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cx-title {
+  font-size: 1.9rem;
+  color: #d4af37; /* gold */
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.cx-sub {
+  color: #cfcfcf;
+  margin-bottom: 32px;
+}
+
+/* grid */
+.cx-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* each item */
+.cx-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(212,175,55,0.06);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.cx-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6), 0 6px 18px rgba(212,175,55,0.06);
+}
+
+/* icon style */
+.cx-icon {
+  min-width: 52px;
+  min-height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(212,175,55,0.12), rgba(212,175,55,0.06));
+  border: 1px solid rgba(212,175,55,0.14);
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+.cx-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+}
+
+/* text */
+.cx-item-title {
+  margin: 0 0 6px 0;
+  font-size: 1.02rem;
+  color: #fff;
+}
+
+.cx-item-desc {
+  margin: 0;
+  color: #c9c9c9;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .cx-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cx-grid {
+    grid-template-columns: 1fr;
+  }
+  .cx-item { padding: 14px; }
+  .cx-icon { min-width: 44px; min-height: 44px; }
+}
