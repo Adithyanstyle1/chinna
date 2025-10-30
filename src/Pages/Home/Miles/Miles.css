@@ -1,0 +1,73 @@
+/* Miles.css — Premium Black & Gold Styling */
+
+.miles-section {
+  background: #000;
+  color: #fff;
+  padding: 90px 6%;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto;
+  text-align: center;
+}
+
+.miles-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d4af37;
+  margin-bottom: 12px;
+}
+
+.miles-sub {
+  color: #cfcfcf;
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
+/* Grid */
+.miles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.mile-card {
+  background: #0d0d0d;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 20px;
+  padding: 35px 25px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.mile-card:hover {
+  background: rgba(212, 175, 55, 0.05);
+  transform: translateY(-5px);
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+.mile-icon {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.mile-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.mile-label {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .miles-title {
+    font-size: 1.7rem;
+  }
+  .mile-card {
+    padding: 25px 20px;
+  }
+}
